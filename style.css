@@ -1,0 +1,40 @@
+:root {
+    --light-blue: #E9F1FA;
+    --bright-blue: #00ABE4;
+    --white: #FFFFFF;
+    /*--regal-blue: #FFFFFF;*/
+    /*--brighter-blue: #FFFFFF;*/
+}
+
+body {
+    background-color: var(--light-blue);
+    color: var(--bright-blue);
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-areas:
+        "hd hd hd hd"
+        "lf main main rt"
+        "lf main main rt"
+        "lf main main rt"
+        "ft ft ft ft";
+}
+
+header{
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+sidebar-left {
+    grid-area: lf;
+}
+
+sidebar-right {
+    grid-area: rt;
+}
+
+footer {
+    grid-area: ft;
+}
